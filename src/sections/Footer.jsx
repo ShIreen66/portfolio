@@ -1,6 +1,6 @@
-import React from "react";
 import { FaEnvelope } from "react-icons/fa";
-import RotatingCircleText from "../components/RotateCircleText";
+import { Link } from "react-router-dom";
+import AnimatedEnvelopeLink from "../components/AnimatedEnvelope";
 
 const Footer = () => {
   return (
@@ -8,44 +8,31 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
         {/* Left Section */}
         <div className="text-center flex flex-row items-center justify-center space-x-4">
-         
           <p className="text-sm">
             © {new Date().getFullYear()} All rights reserved.
           </p>
         </div>
 
         {/* Center Links */}
-         <div className="text-center">
+
+        <div className="text-center">
           <ul className="flex flex-wrap justify-center md:justify-start space-x-6 text-sm ml-10">
-            <li>
-              <a href="#about" className="hover:text-white transition">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#projects" className="hover:text-white transition">
-                Projects
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className="hover:text-white transition">
-                Contact
-              </a>
-            </li>
-          </ul> 
-        </div> 
+            <Link to="/about" className="hover:text-white transition">
+              About
+            </Link>
+            <Link to="/projects" className="hover:text-white transition">
+              Projects
+            </Link>
+            <Link to="/contact" className="hover:text-white transition">
+              Contact
+            </Link>
+          </ul>
+        </div>
 
         {/* Social Icons */}
-        <div className="flex justify-center md:justify-end space-x-4 text-lg">
-          <a
-            href="mailto:youremail@example.com"
-            className="hover:text-white transition"
-          >
-            <FaEnvelope />
-          </a>
-
-          
-        </div>
+        {/* <div className="flex justify-center md:justify-end space-x-4 text-lg">
+          <AnimatedEnvelopeLink />
+        </div> */}
       </div>
     </footer>
   );

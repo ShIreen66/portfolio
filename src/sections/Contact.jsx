@@ -82,7 +82,8 @@ const Contact = () => {
         {/* Social Icons */}
         <div className="mt-8 flex justify-center space-x-6 text-2xl text-gray-600">
           <a
-            href="https://github.com/ShIreen66"
+            // href="https://github.com/ShIreen66"
+            href={import.meta.env.VITE_GITHUB}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-black"
@@ -90,7 +91,7 @@ const Contact = () => {
             <FaGithub />
           </a>
           <a
-            href="https://www.linkedin.com/in/shireen-khan-482a1932b/"
+            href={import.meta.env.VITE_LINKDLN}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-700"
@@ -98,7 +99,7 @@ const Contact = () => {
             <FaLinkedin />
           </a>
           <a
-            href="https://www.instagram.com/shiree.n_06/"
+            href={import.meta.env.VITE_INSTAGRAM}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-pink-500"
@@ -106,7 +107,7 @@ const Contact = () => {
             <FaInstagram />
           </a>
           <a
-            href="https://x.com/066shiree"
+            href={import.meta.env.VITE_TWITTER}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-400"

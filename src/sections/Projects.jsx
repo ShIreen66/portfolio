@@ -4,29 +4,57 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const projects = [
   {
-    title: "E-Commerce App",
+    title: "AI-Image-Enhancer",
     description:
       "A full-stack e-commerce platform with user auth, cart, payment, and admin panel.",
-    tech: ["React", "Node.js", "MongoDB", "Tailwind"],
-    img: "/projects/ecommerce.jpg",
-    live: "https://your-live-link.com",
+    tech: ["React", "AI based API's", "Context", "Tailwind"],
+    img: "public/AI-IMAGE-ENHANCER.png",
+    live: "https://ai-image-generator-woad-mu.vercel.app/ ",
     github: "https://github.com/your-repo",
   },
   {
-    title: "Portfolio Website",
+    title: "Employee Management System",
     description:
       "Personal portfolio to showcase projects, resume and contact form.",
-    tech: ["Next.js", "Framer Motion", "Tailwind"],
-    img: "/projects/portfolio.jpg",
-    live: "https://portfolio.com",
+    tech: ["React", "Context", "Local-Storage", "Tailwind"],
+    img: "public/EMS.png",
+    live: "https://ems-7i55.vercel.app/",
     github: "https://github.com/your-portfolio",
   },
   {
-    title: "Real-time Chat App",
+    title: "Real-time Age Calculator",
     description:
-      "Realtime chat using Socket.IO with typing indicators and message read status.",
-    tech: ["React", "Node.js", "Socket.IO"],
-    img: "/projects/chatapp.jpg",
+      "Realtime age calculator.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    img: "public/AGE-Calculator.png",
+    live: "https://chatapp.com",
+    github: "https://github.com/chatapp-repo",
+  },
+
+   {
+    title: "Random Password Generator",
+    description:
+      "Realtime age calculator.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    img: "public/Passoword-Generator.png",
+    live: "https://chatapp.com",
+    github: "https://github.com/chatapp-repo",
+  },
+    {
+    title: "QR Code Generator",
+    description:
+      "Realtime age calculator.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    img: "public/QR-Code-Generator.png",
+    live: "https://chatapp.com",
+    github: "https://github.com/chatapp-repo",
+  },
+  {
+    title: "Notes Creator",
+    description:
+      "Realtime age calculator.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    img: "public/Notes.png",
     live: "https://chatapp.com",
     github: "https://github.com/chatapp-repo",
   },

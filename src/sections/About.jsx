@@ -17,6 +17,10 @@ import {
   SiVercel,
   SiNetlify,
   SiPostman,
+  SiCanva,
+  SiFigma,
+  SiGreensock,
+  SiFramer,
 } from "react-icons/si";
 
 // Split into two lines
@@ -29,11 +33,14 @@ const firstRowIcons = [
   { icon: <SiRedux color="#764abc" />, label: "Redux" },
   { icon: <SiNextdotjs color="black" />, label: "Next.js" },
   { icon: <SiTypescript color="#007acc" />, label: "TypeScript" },
-  { icon: <SiNodedotjs color="#68a063" />, label: "Node.js" },
+  { icon: <SiFigma color="#F24E1E" />, label: "Figma" },
+  { icon: <SiCanva color="#633aef" />, label: "Canva" },
 ];
+
 
 const secondRowIcons = [
   { icon: <SiExpress color="gray" />, label: "Express" },
+  { icon: <SiNodedotjs color="#68a063" />, label: "Node.js" },
   { icon: <SiMongodb color="#4DB33D" />, label: "MongoDB" },
   { icon: <SiMysql color="#00758F" />, label: "MySQL" },
   { icon: <SiGithub color="black" />, label: "GitHub" },
