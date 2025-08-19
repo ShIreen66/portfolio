@@ -21,6 +21,16 @@ const projects = [
     live: "https://ems-7i55.vercel.app/",
     github: "https://github.com/your-portfolio",
   },
+
+  {
+    title: "Floral Fragility",
+    description:
+      "E-commerce flower's website.",
+    tech: ["React.js", "Locomotive", "Smooth Scrolling", "GSAP", "Tailwind CSS", "CSS"],
+    img: "public/floral.png",
+    live: "https://floral-flagirity.vercel.app/",
+    github: "https://github.com/chatapp-repo",
+  },
   {
     title: "Real-time Age Calculator",
     description:

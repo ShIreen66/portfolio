@@ -135,7 +135,7 @@ const Home = () => {
       </div>
 
       <RotatingCircleText />
-      <Footer className="fixed" />
+      <Footer className="fixed h-screen" />
     </>
   );
 };
