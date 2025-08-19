@@ -32,6 +32,16 @@ const projects = [
     github: "https://github.com/chatapp-repo",
   },
   {
+    title: "stopwatch-countdown-timer",
+    description:
+      "E-commerce flower's website.",
+    tech: ["React.js", "Locomotive", "Smooth Scrolling", "GSAP", "Tailwind CSS", "CSS"],
+    img: "public/stopwatch-countdown-timer.png",
+    // public/stopwatch-countdown-timer.png
+    live: "https://floral-flagirity.vercel.app/",
+    github: "https://github.com/chatapp-repo",
+  },
+  {
     title: "Real-time Age Calculator",
     description:
       "Realtime age calculator.",
