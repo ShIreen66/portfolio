@@ -21,6 +21,15 @@ const projects = [
     live: "https://ems-7i55.vercel.app/",
     github: "https://github.com/your-portfolio",
   },
+  {
+    title: "Food Recipe Book",
+    description:
+      "Personal portfolio to showcase projects, resume and contact form.",
+    tech: ["React", "Context", "Local-Storage", "Tailwind"],
+    img: "public/recipe-book.png",
+    live: "https://ems-7i55.vercel.app/",
+    github: "https://github.com/your-portfolio",
+  },
 
   {
     title: "Floral Fragility",
