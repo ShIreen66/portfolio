@@ -1,4 +1,3 @@
-import React from "react";
 import {
   SiNextdotjs,
   SiNodedotjs,
@@ -52,7 +51,7 @@ const secondRowIcons = [
 ];
 
 const IconRow = ({ icons }) => (
-  <div className="flex flex-wrap justify-center gap-10 mb-16">
+  <div className="flex flex-wrap justify-center gap-10 mb-[63.5px]">
     {icons.map(({ icon, label }, idx) => (
       <div
         key={idx}
