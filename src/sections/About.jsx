@@ -22,6 +22,7 @@ import {
   SiGreensock,
   SiFramer,
 } from "react-icons/si";
+import Footer from "./Footer";
 
 // Split into two lines
 const firstRowIcons = [
@@ -66,7 +67,7 @@ const IconRow = ({ icons }) => (
 
 const About = () => {
   return (
-    <div className="mt-20 px-6 text-black">
+    <div className="mt-20 px-0  text-black">
       <h2 className="text-4xl font-bold text-center">
         Things I'm <span className="text-blue-500">good</span> at
       </h2>
@@ -85,6 +86,7 @@ const About = () => {
         new technologies. Outside of coding, I enjoy sketching UI designs and
         staying updated with the latest tech trends.
       </p>
+      <Footer />
     </div>
   );
 };

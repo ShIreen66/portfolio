@@ -10,13 +10,13 @@ const RotatingCircleText = () => {
   }, []);
 
   return (
-    <div className="relative w-72 h-10 flex items-center justify-center">
+    <div className="relative w-72 h-10 flex items-center justify-center ">
       {/* Rotating outer text */}
-      <div className="absolute w-1.5 h-1.5 animate-spin-slow ">
+      <div className="absolute w-1.5 h-1.5 animate-spin-slow  ">
         {letters.map((char, i) => (
           <span
             key={i}
-            className="absolute text-sm text-blue-700 font-bold "
+            className="absolute text-sm text-blue-700 font-bold  "
             style={{
               transform: `rotate(${
                 i * (360 / letters.length)

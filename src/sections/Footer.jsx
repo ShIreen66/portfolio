@@ -7,7 +7,7 @@ const Footer = () => {
       initial={{ y: 80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8 }}
-      className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-gray-300 py-8 px-4 mt-6 w-full "
+      className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-gray-300 py-9 px-4 mt-6 w-full "
     >
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
         {/* Left Section */}

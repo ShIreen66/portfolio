@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import Footer from "./Footer";
 
 const projects = [
   {
@@ -33,18 +34,30 @@ const projects = [
 
   {
     title: "Floral Fragility",
-    description:
-      "E-commerce flower's website.",
-    tech: ["React.js", "Locomotive", "Smooth Scrolling", "GSAP", "Tailwind CSS", "CSS"],
+    description: "E-commerce flower's website.",
+    tech: [
+      "React.js",
+      "Locomotive",
+      "Smooth Scrolling",
+      "GSAP",
+      "Tailwind CSS",
+      "CSS",
+    ],
     img: "public/floral.png",
     live: "https://floral-flagirity.vercel.app/",
     github: "https://github.com/chatapp-repo",
   },
   {
     title: "stopwatch-countdown-timer",
-    description:
-      "E-commerce flower's website.",
-    tech: ["React.js", "Locomotive", "Smooth Scrolling", "GSAP", "Tailwind CSS", "CSS"],
+    description: "E-commerce flower's website.",
+    tech: [
+      "React.js",
+      "Locomotive",
+      "Smooth Scrolling",
+      "GSAP",
+      "Tailwind CSS",
+      "CSS",
+    ],
     img: "public/stopwatch-countdown-timer.png",
     // public/stopwatch-countdown-timer.png
     live: "https://floral-flagirity.vercel.app/",
@@ -52,27 +65,24 @@ const projects = [
   },
   {
     title: "Real-time Age Calculator",
-    description:
-      "Realtime age calculator.",
+    description: "Realtime age calculator.",
     tech: ["HTML", "CSS", "JavaScript"],
     img: "public/AGE-Calculator.png",
     live: "https://chatapp.com",
     github: "https://github.com/chatapp-repo",
   },
 
-   {
+  {
     title: "Random Password Generator",
-    description:
-      "Realtime age calculator.",
+    description: "Realtime age calculator.",
     tech: ["HTML", "CSS", "JavaScript"],
     img: "public/Passoword-Generator.png",
     live: "https://chatapp.com",
     github: "https://github.com/chatapp-repo",
   },
-    {
+  {
     title: "QR Code Generator",
-    description:
-      "Realtime age calculator.",
+    description: "Realtime age calculator.",
     tech: ["HTML", "CSS", "JavaScript"],
     img: "public/QR-Code-Generator.png",
     live: "https://chatapp.com",
@@ -80,8 +90,7 @@ const projects = [
   },
   {
     title: "Notes Creator",
-    description:
-      "Realtime age calculator.",
+    description: "Realtime age calculator.",
     tech: ["HTML", "CSS", "JavaScript"],
     img: "public/Notes.png",
     live: "https://chatapp.com",
@@ -91,14 +100,15 @@ const projects = [
 
 const Projects = () => {
   return (
+    <>
     <div className="px-6 md:px-20 py-20 bg-gray-100 text-black">
       {/* Header */}
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold">
-          Featured <span className="text-blue-600">Projects</span>
+          What I’ve  <span className="text-blue-600">Built</span>
         </h2>
         <p className="text-gray-600 text-lg mt-2">
-          A selection of work I've done recently
+         Projects that showcase my skills and expertise.
         </p>
       </div>
 
@@ -120,7 +130,9 @@ const Projects = () => {
             />
             <div className="p-5">
               <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-              <p className="text-sm text-gray-600 mb-4">{project.description}</p>
+              <p className="text-sm text-gray-600 mb-4">
+                {project.description}
+              </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.tech.map((tech, idx) => (
                   <span
@@ -154,7 +166,14 @@ const Projects = () => {
         ))}
       </div>
     </div>
+
+    <div className="auto ">
+      <Footer />
+    </div>
+</>
+    
   );
+  
 };
 
 export default Projects;
