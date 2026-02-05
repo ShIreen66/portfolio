@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
-import Footer from "./Footer";
 
 const Contact = () => {
   const handleSubmit = (e) => {
@@ -122,7 +121,7 @@ const Contact = () => {
         </motion.div>
       </div>
 
-      <Footer />
+      
     </>
   );
 };

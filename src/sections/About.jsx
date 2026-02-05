@@ -20,34 +20,41 @@ import {
   SiFigma,
   SiGreensock,
   SiFramer,
+  SiBootstrap,
+  SiMui,
+  // SiThunderbird,
 } from "react-icons/si";
-import Footer from "./Footer";
 
 // Split into two lines
 const firstRowIcons = [
-  { icon: <SiHtml5 color="#e34c26" />, label: "HTML5" },
-  { icon: <SiCss3 color="#264de4" />, label: "CSS3" },
-  { icon: <SiTailwindcss color="#38bdf8" />, label: "Tailwind" },
-  { icon: <SiJavascript color="#f0db4f" />, label: "JavaScript" },
-  { icon: <SiReact color="#61dafb" />, label: "React.js" },
-  { icon: <SiRedux color="#764abc" />, label: "Redux" },
-  { icon: <SiNextdotjs color="black" />, label: "Next.js" },
-  { icon: <SiTypescript color="#007acc" />, label: "TypeScript" },
+  { icon: <SiHtml5 color="#E34F26" />, label: "HTML5" },
+  { icon: <SiCss3 color="#1572B6" />, label: "CSS3" },
+  { icon: <SiTailwindcss color="#06B6D4" />, label: "Tailwind CSS" },
+  { icon: <SiBootstrap color="#7952B3" />, label: "Bootstrap" },
+  { icon: <SiMui color="#007FFF" />, label: "Material UI" },
+  { icon: <SiJavascript color="#F7DF1E" />, label: "JavaScript" },
+  { icon: <SiReact color="#61DAFB" />, label: "React.js" },
+  { icon: <SiRedux color="#764ABC" />, label: "Redux" },
+  { icon: <SiNextdotjs color="#000000" />, label: "Next.js" },
+  { icon: <SiTypescript color="#3178C6" />, label: "TypeScript" },
   { icon: <SiFigma color="#F24E1E" />, label: "Figma" },
-  { icon: <SiCanva color="#633aef" />, label: "Canva" },
+  { icon: <SiCanva color="#00C4CC" />, label: "Canva" },
+  { icon: <SiGreensock color="#0F9D58" />, label: "GSAP" },
 ];
 
 
+
 const secondRowIcons = [
-  { icon: <SiExpress color="gray" />, label: "Express" },
-  { icon: <SiNodedotjs color="#68a063" />, label: "Node.js" },
-  { icon: <SiMongodb color="#4DB33D" />, label: "MongoDB" },
-  { icon: <SiMysql color="#00758F" />, label: "MySQL" },
-  { icon: <SiGithub color="black" />, label: "GitHub" },
+  { icon: <SiExpress color="#000000" />, label: "Express.js" },
+  { icon: <SiNodedotjs color="#339933" />, label: "Node.js" },
+  { icon: <SiMongodb color="#47A248" />, label: "MongoDB" },
+  { icon: <SiMysql color="#4479A1" />, label: "MySQL" },
+  { icon: <SiGithub color="#181717" />, label: "GitHub" },
   { icon: <SiRender color="#46E3B7" />, label: "Render" },
-  { icon: <SiVercel color="black" />, label: "Vercel" },
+  { icon: <SiVercel color="#000000" />, label: "Vercel" },
   { icon: <SiNetlify color="#00C7B7" />, label: "Netlify" },
   { icon: <SiPostman color="#FF6C37" />, label: "Postman" },
+  // { icon: <SiThunderbird color="#7B3FE4" />, label: "Thunder Client" },
 ];
 
 const IconRow = ({ icons }) => (
@@ -85,7 +92,7 @@ const About = () => {
         new technologies. Outside of coding, I enjoy sketching UI designs and
         staying updated with the latest tech trends.
       </p>
-      <Footer />
+      
     </div>
   );
 };

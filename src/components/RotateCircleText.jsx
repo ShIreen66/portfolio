@@ -1,38 +1,31 @@
-import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 const RotatingCircleText = () => {
-  const text = " FULL STACK DEVELOPER  ";
-  const [letters, setLetters] = useState([]);
-
-  useEffect(() => {
-    const splitText = text.repeat(2).split(""); // Repeat to fill circle
-    setLetters(splitText);
-  }, []);
-
   return (
-    <div className="relative w-72 h-10 flex items-center justify-center ">
-      {/* Rotating outer text */}
-      <div className="absolute w-1.5 h-1.5 animate-spin-slow  ">
-        {letters.map((char, i) => (
-          <span
-            key={i}
-            className="absolute text-sm text-blue-700 font-bold  "
-            style={{
-              transform: `rotate(${
-                i * (360 / letters.length)
-              }deg) translate(5.5rem) rotate(-${i * (90 / letters.length)}deg)`,
-              transformOrigin: "center",
-            }}
-          >
-            {char}
-          </span>
-        ))}
-      </div>
-
-      {/* Inner circle with "Hire Me" */}
-      <div className="w-28 h-28 rounded-full bg-gradient-to-r from-green-400 to-blue-600 flex items-center justify-center text-white font-semibold text-lg shadow-lg hover:scale-110 transition-transform">
+    <div className="relative w-72 h-6 flex items-center justify-center">
+      <motion.div
+        initial={{ scale: 0, opacity: 0 }}
+        animate={{
+          scale: [1, 1.08, 1],
+          opacity: 1,
+        }}
+        transition={{
+          duration: 2,
+          ease: "easeInOut",
+          repeat: Infinity,
+          repeatDelay: 1.5,
+        }}
+        whileHover={{ scale: 1.15 }}
+        className="
+          w-28 h-28 rounded-full
+          bg-gradient-to-r from-green-400 to-blue-600
+          flex items-center justify-center
+          text-white font-bold text-lg
+          shadow-xl cursor-pointer
+        "
+      >
         Hire Me
-      </div>
+      </motion.div>
     </div>
   );
 };

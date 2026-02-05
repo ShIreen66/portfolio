@@ -23,15 +23,20 @@ const Nav = () => {
       <div className="hidden xl:flex justify-between items-center px-10 py-4">
         {/* Left: Navigation Links */}
         <div className="flex space-x-6 text-lg font-medium">
-          {["/", "/about", "/projects", "/contact"].map((path, idx) => (
+          {[
+            { to: { pathname: "/", hash: "#home" }, label: "Home" },
+            { to: { pathname: "/", hash: "#about" }, label: "About" },
+            { to: { pathname: "/", hash: "#projects" }, label: "Projects" },
+            { to: { pathname: "/", hash: "#contact" }, label: "Contact" },
+          ].map((item, idx) => (
             <NavLink
-              key={path}
-              to={path}
+              key={idx}
+              to={item.to}
               className={({ isActive }) =>
                 `pb-1 ${isActive ? "border-b-2 border-black" : ""}`
               }
             >
-              {["Home", "About", "Projects", "Contact"][idx]}
+              {item.label}
             </NavLink>
           ))}
         </div>
@@ -132,10 +137,15 @@ const Nav = () => {
         <div className={`${isMenuOpen ? "block" : "hidden"} px-4 lg:px-8 pb-4`}>
           {/* Navigation Links */}
           <div className="flex flex-col space-y-3 lg:space-y-4 mb-6">
-            {["/", "/about", "/projects", "/contact"].map((path, idx) => (
+            {[
+              { to: { pathname: "/", hash: "#home" }, label: "Home" },
+              { to: { pathname: "/", hash: "#about" }, label: "About" },
+              { to: { pathname: "/", hash: "#projects" }, label: "Projects" },
+              { to: { pathname: "/", hash: "#contact" }, label: "Contact" },
+            ].map((item, idx) => (
               <NavLink
-                key={path}
-                to={path}
+                key={idx}
+                to={item.to}
                 onClick={() => setIsMenuOpen(false)}
                 className={({ isActive }) =>
                   `text-base lg:text-lg font-medium py-2 ${
@@ -143,7 +153,7 @@ const Nav = () => {
                   }`
                 }
               >
-                {["Home", "About", "Projects", "Contact"][idx]}
+                {item.label}
               </NavLink>
             ))}
           </div>

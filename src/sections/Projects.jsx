@@ -1,117 +1,88 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
-import Footer from "./Footer";
+
+// Local SVG illustration
+import emailIllustration from "../assets/undraw_email-campaign_2z6t.svg";
+import aiIllustration from "../assets/undraw_optimize-image_q59h.svg";
+import cookingIllustration from "../assets/undraw_barbecue_k11q.svg";
+import projectTeamIllustration from "../assets/undraw_project-team_dip6.svg";
 
 const projects = [
   {
-    title: "AI-Image-Enhancer",
+    title: "Web-based Email Client (Full Stack)",
     description:
-      "Upload. Enhance. Wow. Instantly transform your images with AI. Compare original and enhanced versions side by side, all in a sleek, intuitive interface built for speed and simplicity.",
+      "Built a full-stack web-based email client supporting authentication, inbox management, and REST API-driven client–server communication using the MERN stack.",
+    tech: [
+      "React",
+      "React Router",
+      "Context API",
+      "Axios",
+      "Material UI",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "REST APIs",
+      "Authentication",
+    ],
+    illustration: emailIllustration,
+    live: "asdfg",
+    github: "https://github.com/",
+  },
+  {
+    title: "Flavorly – Recipe Management System (Full Stack)",
+    description:
+      "Developed a full-stack recipe management system with authentication, role-based access, CRUD operations, favorites, and REST API-based data handling.",
+    tech: [
+      "React",
+      "React Router",
+      "Context API",
+      "Axios",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT Authentication",
+      "REST APIs",
+      "Framer Motion",
+      "Tailwind CSS",
+    ],
+    illustration: cookingIllustration,
+    live: "https://recipe-project-beta.vercel.app/",
+    github: "https://github.com/ShIreen66/Flavorly.git",
+  },
+  {
+    title: "AI Image Enhancer",
+    description:
+      "Designed and developed an AI-powered image enhancement tool with real-time comparison and seamless third-party API integration.",
     tech: [
       "React",
       "Vite",
-      "AI based API's",
+      "AI APIs",
       "Axios",
-      "Context Hook",
-      "React-Router-DOM",
-      "Tailwind",
-      "Responsive Layout",
+      "Context API",
+      "React Router",
+      "Tailwind CSS",
     ],
-    img: "public/AI-IMAGE-ENHANCER.png",
+    illustration: aiIllustration,
     live: "https://ai-image-generator-woad-mu.vercel.app/",
     github: "https://github.com/ShIreen66/AI_Image_Generator.git",
   },
   {
     title: "Workflow Manager",
     description:
-      "A modern Workflow Manager built with React + Vite, featuring secure login, role-based dashboards, and smart task management with persistent local storage authentication.",
+      "Built a role-based workflow management system with authentication, dashboards, and task handling using modern React architecture.",
     tech: [
       "React",
       "Vite",
-      "Context Hook",
-      "Local-Storage",
-      "React-Router-DOM",
-      "Tailwind",
-      "Responsive Layout",
+      "Context API",
+      "Local Storage",
+      "React Router",
+      "Tailwind CSS",
     ],
-    img: "public/EMS.png",
+    illustration: projectTeamIllustration,
     live: "https://ems-7i55.vercel.app/",
     github: "https://github.com/ShIreen66/Workflow-Manager.git",
-  },
-  {
-    title: "Flavorly Recipe App",
-    description:
-      "A React-based web app to explore, create, and manage recipes. Features include user authentication, recipe browsing and search, favorites, recipe management (admin only).",
-    tech: [
-      "React",
-      "Context Hook",
-      "Local-Storage",
-      "Axios",
-      "Framer-Motion",
-      ,
-      "Toastify",
-      "React-Hook-Form",
-      "Tailwind",
-    ],
-    img: "public/recipe-book.png",
-    live: "https://recipe-project-beta.vercel.app/",
-    github: "https://github.com/ShIreen66/Flavorly.git",
-  },
-  // {
-  //   title: "Floral Fragility",
-  //   description: "E-commerce flower's website.",
-  //   tech: [
-  //     "React.js",
-  //     "Vite",
-  //     "Locomotive",
-  //     "Smooth Scrolling",
-  //     "GSAP-Animation",
-  //     "Tailwind CSS",
-  //     "CSS",
-  //   ],
-  //   img: "public/floral.png",
-  //   live: "https://floral-flagirity.vercel.app/",
-  //   github: "https://github.com/chatapp-repo",
-  // },
-  // {
-  //   title: "stopwatch-countdown-timer",
-  //   description: "E-commerce flower's website.",
-  //   tech: [
-  //     "React.js",
-  //     "Locomotive",
-  //     "Smooth Scrolling",
-  //     "GSAP",
-  //     "Tailwind CSS",
-  //     "CSS",
-  //   ],
-  //   img: "public/stopwatch-countdown-timer.png",
-  //   live: "https://floral-flagirity.vercel.app/",
-  //   github: "https://github.com/chatapp-repo",
-  // },
-  {
-    title: "Real-time Age Calculator",
-    description: "Realtime age calculator.",
-    tech: ["HTML", "CSS", "JavaScript"],
-    img: "public/AGE-Calculator.png",
-    live: "https://chatapp.com",
-    github: "https://github.com/chatapp-repo",
-  },
-  {
-    title: "Random Password Generator",
-    description: "Realtime age calculator.",
-    tech: ["HTML", "CSS", "JavaScript"],
-    img: "public/Passoword-Generator.png",
-    live: "https://chatapp.com",
-    github: "https://github.com/chatapp-repo",
-  },
-  {
-    title: "QR Code Generator",
-    description: "Realtime age calculator.",
-    tech: ["HTML", "CSS", "JavaScript"],
-    img: "public/QR-Code-Generator.png",
-    live: "https://chatapp.com",
-    github: "https://github.com/chatapp-repo",
   },
 ];
 
@@ -120,43 +91,56 @@ const Projects = () => {
     <>
       <div className="px-6 md:px-20 py-20 bg-gray-100 text-black">
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-14">
           <h2 className="text-4xl font-bold">
-            What I’ve <span className="text-blue-600">Built</span>
+            Hands-on <span className="text-blue-600">Experience</span>
           </h2>
-          <p className="text-gray-600 text-lg mt-2">
-            Projects that showcase my skills and expertise.
+          <p className="text-gray-600 text-lg mt-3">
+            Full-stack and frontend applications built using modern web
+            technologies.
           </p>
         </div>
 
-        {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        {/* Grid (2 x 2 layout) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
+              transition={{ duration: 0.5, delay: index * 0.12 }}
               viewport={{ once: true }}
-              className="bg-white rounded-xl shadow-lg transition-shadow duration-300 overflow-hidden cursor-pointer"
               whileHover={{
-                y: -5,
-                boxShadow: "0px 15px 30px rgba(0,0,0,0.2)",
+                y: -6,
+                boxShadow: "0px 18px 35px rgba(0,0,0,0.15)",
               }}
+              className="bg-white rounded-xl shadow-lg overflow-hidden"
             >
-              <motion.img
-                src={project.img}
-                alt={project.title}
-                className="w-full h-48 object-cover rounded-t-xl origin-center"
-                whileHover={{ scale: 1.12 }}
-                transition={{ duration: 0.4, ease: "easeInOut" }}
-              />
-              <div className="p-5">
-                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+              {/* Illustration */}
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.4 }}
+                className="h-56 flex items-center justify-center
+                           bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50"
+              >
+                <img
+                  src={project.illustration}
+                  alt={project.title}
+                  className="h-40 object-contain"
+                />
+              </motion.div>
+
+              {/* Content */}
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2">
+                  {project.title}
+                </h3>
+
                 <p className="text-sm text-gray-600 mb-4">
                   {project.description}
                 </p>
-                <div className="flex flex-wrap gap-2 mb-4">
+
+                <div className="flex flex-wrap gap-2 mb-5">
                   {project.tech.map((tech, idx) => (
                     <span
                       key={idx}
@@ -166,15 +150,18 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
+
                 <div className="flex justify-between items-center text-sm font-semibold">
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-1 text-blue-600 hover:underline"
-                  >
-                    Live <FaExternalLinkAlt className="text-xs" />
-                  </a>
+                  {project.live && (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1 text-blue-600 hover:underline"
+                    >
+                      Live <FaExternalLinkAlt className="text-xs" />
+                    </a>
+                  )}
                   <a
                     href={project.github}
                     target="_blank"
@@ -190,7 +177,7 @@ const Projects = () => {
         </div>
       </div>
 
-      <Footer />
+      
     </>
   );
 };
