@@ -1,12 +1,26 @@
-# React + Vite
+# Shireen Khan — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio showcasing Shireen Khan's frontend and full-stack work. The site is built with React, Vite, Tailwind CSS and Framer Motion. Navigation uses in-page anchors so clicking a nav item scrolls to the related section on the Home page.
 
-Currently, two official plugins are available:
+## Summary
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Full Stack Web Developer experienced in building responsive, production-ready web applications using React, Next.js, Node.js, Express, MongoDB and modern frontend tooling. Focus areas: UI, REST APIs, authentication, and building clean, accessible interfaces.
 
-## Expanding the ESLint configuration
+## Roles & Headline
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Full Stack Developer (MERN)
+- Frontend Developer (React / Next.js)
+- JavaScript / TypeScript Developer
+- React.js Developer
+- Node.js Developer
+
+## Key Technologies
+
+- React, Vite, React Router
+- Node.js, Express
+- MongoDB, Mongoose
+- TypeScript (optional), JavaScript (ES6+)
+- Tailwind CSS, Material UI, Bootstrap
+- Framer Motion, GSAP
+- Git, Vercel, Netlify, Render
+
